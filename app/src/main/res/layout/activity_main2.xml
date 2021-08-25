@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity2">
-    <TextView
-        android:id="@+id/t1"
+    <Button
+        android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:autoSizeMinTextSize="18sp"
         android:padding="10dp"
         android:minLines="2"
-        android:text="sometextsometextsometextsometextsometextsometextsometext"
+        android:text="Button"
         android:background="#faa"
         android:textStyle="bold"
         app:autoSizeMaxTextSize="30sp"
