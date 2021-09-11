@@ -1,10 +1,11 @@
-package com.param.stackoverflow
+package com.param.stackoverflow.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.param.stackoverflow.R
 
 class BlankFragment : Fragment() {
 

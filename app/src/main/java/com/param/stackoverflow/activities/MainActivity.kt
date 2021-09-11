@@ -1,4 +1,4 @@
-package com.param.stackoverflow
+package com.param.stackoverflow.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.Toast
+import com.param.stackoverflow.R
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
