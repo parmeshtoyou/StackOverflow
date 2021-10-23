@@ -2,7 +2,6 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'kotlin-kapt'
-    id 'dagger.hilt.android.plugin'
 }
 
 android {
@@ -45,11 +44,13 @@ dependencies {
     implementation 'com.google.android.material:material:1.4.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
 
-    // hilt
-    def hilt_version = "2.38.1"
-    implementation "com.google.dagger:hilt-android:$hilt_version"
-    //kapt "com.google.dagger:hilt-compiler:$hilt_version"
-    kapt "com.google.dagger:hilt-android-compiler:$hilt_version"
+    def daggerVer = "2.38.1" // or latest version
+
+    implementation "com.google.dagger:dagger:$daggerVer"
+    implementation "com.google.dagger:dagger-android-support:$daggerVer"
+    kapt "com.google.dagger:dagger-android-processor:$daggerVer"
+    kapt "com.google.dagger:dagger-compiler:$daggerVer"
+
 
     implementation "androidx.navigation:navigation-fragment-ktx:2.3.5"
     implementation "androidx.navigation:navigation-ui-ktx:2.3.5"
